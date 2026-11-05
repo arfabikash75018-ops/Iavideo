@@ -60,7 +60,7 @@ const Mat: React.FC<{c: string; r?: number; o?: number; e?: string}> = ({c, r = 
 
 const Ell: React.FC<{p?: V3; s: V3 | number; c: string; rot?: V3; r?: number; o?: number}> = ({p = [0, 0, 0], s, c, rot = [0, 0, 0], r, o}) => (
   <mesh position={p} rotation={rot} scale={typeof s === 'number' ? [s, s, s] : s}>
-    <sphereGeometry args={[1, 28, 20]} />
+    <sphereGeometry args={[1, 16, 12]} />
     <Mat c={c} r={r} o={o} />
   </mesh>
 );
@@ -68,7 +68,7 @@ const Ell: React.FC<{p?: V3; s: V3 | number; c: string; rot?: V3; r?: number; o?
 const Leg: React.FC<{p: V3; rot: number; len: number; r: number; c: string; paw: string; foot?: number}> = ({p, rot, len, r, c, paw, foot = 1.5}) => (
   <group position={p} rotation={[rot, 0, 0]}>
     <mesh position={[0, -len / 2, 0]}>
-      <capsuleGeometry args={[r, len - r, 6, 14]} />
+      <capsuleGeometry args={[r, len - r, 3, 8]} />
       <Mat c={c} />
     </mesh>
     <Ell p={[0, -len + r * 0.6, r * 0.5]} s={[r * 1.25, r * 0.85, r * foot]} c={paw} />
@@ -80,7 +80,7 @@ const Tail: React.FC<{n: number; len: number; r: number; c: string; tip: string;
   return (
     <group rotation={[curl, Math.sin(phase) * wag, 0]}>
       <mesh position={[0, len / 2, 0]}>
-        <capsuleGeometry args={[r, len, 6, 10]} />
+        <capsuleGeometry args={[r, len, 3, 6]} />
         <Mat c={c} />
       </mesh>
       <group position={[0, len, 0]}>
