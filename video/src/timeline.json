@@ -1,0 +1,9 @@
+{
+  "catEnter": 0.2, "hiss": 2.7, "crouch": 5.0, "jump": 5.9, "hit": 6.75, "shakeOff": 7.6,
+  "lionAppear": 8.4, "stepStart": 8.6, "roar": 12.0, "catFlee": 12.9, "cheer": 14.6,
+  "catBack": 16.3, "evil": 17.0, "armyStart": 17.8, "circle": 20.0,
+  "pounce": 27.3, "dust": 27.6, "pop1": 28.3, "pop2": 28.65, "pop3": 29.0, "pop4": 29.3, "pop5": 29.6,
+  "reveal": 30.0, "celebrate": 30.4, "embarrass": 33.0,
+  "look": 40.6, "gRise": 41.8, "gEyes": 43.6, "scream": 44.4, "inhale": 46.0, "sneeze": 47.0, "fin": 49.0,
+  "end": 50.0
+}

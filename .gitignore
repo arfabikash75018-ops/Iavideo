@@ -1,0 +1,4 @@
+video/node_modules/
+video/out/stills/
+video/out/*.log
+video/out/test.*
