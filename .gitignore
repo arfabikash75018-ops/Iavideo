@@ -3,3 +3,4 @@ video/out/stills/
 video/out/*.log
 video/out/test.*
 video/out/bench.mp4
+video/out/planche*.png
