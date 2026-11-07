@@ -4,7 +4,7 @@ import {FPS} from '../theme';
 
 export type Expr = 'neutral' | 'smirk' | 'happy' | 'skeptical' | 'surprised';
 export type Speaker = 'jordan' | 'client';
-export interface Line {id: string; speaker: Speaker; expr: Expr; text: string}
+export interface Line {id: string; speaker: Speaker; expr: Expr; text: string; gapBefore?: number}
 export interface WordT {w: string; start: number; end: number}
 export interface Meta {file: string; duration: number; speechStart: number; speechEnd: number; words: WordT[]; env: number[]}
 export interface Placed extends Line {startF: number; endF: number; meta: Meta}
@@ -14,6 +14,7 @@ export function layout(episode: keyof typeof lines, gapSec = 0.22, leadSec = 0.5
   let t = Math.round(leadSec * FPS);
   const placed: Placed[] = [];
   for (const l of (lines as Record<string, Line[]>)[episode]) {
+    if (placed.length) t += Math.round(((l.gapBefore ?? gapSec) - gapSec) * FPS);
     const m = (meta as Record<string, Meta>)[l.id];
     if (!m) throw new Error(`Audio manquant pour ${l.id} (lancer npm run audio:analyze)`);
     const len = Math.ceil(m.duration * FPS);

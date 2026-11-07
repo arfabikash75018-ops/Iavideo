@@ -12,7 +12,7 @@ const WORLD_J = 470, WORLD_C = 1440;          // positions des personnages dans 
 const WAIST_Y = 1400, CHAR_SCALE = 1.45;
 
 /** Décor : étagère, fenêtre, lampes. Rendu en parallaxe (0.6x la caméra). */
-const Backdrop: React.FC<{frame: number}> = ({frame}) => (
+export const Backdrop: React.FC<{frame: number}> = ({frame}) => (
   <g>
     <rect x={-400} y={-100} width={3000} height={2100} fill={C.cream} />
     {[0, 1, 2, 3].map((i) => <rect key={i} x={-300 + i * 640} y={180} width={500} height={900} rx={40} fill={C.mint} />)}
@@ -39,7 +39,7 @@ const Backdrop: React.FC<{frame: number}> = ({frame}) => (
 );
 
 /** Appareils génériques (sans logo) posés sur le comptoir, côté client. */
-const Devices: React.FC = () => (
+export const Devices: React.FC = () => (
   <g transform="translate(1160 1300)">
     <rect x={0} y={20} width={230} height={140} rx={14} fill={C.navy2} /><rect x={-30} y={150} width={290} height={16} rx={8} fill={C.navy} />
     <rect x={20} y={36} width={190} height={104} rx={6} fill={C.mint} />

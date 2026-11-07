@@ -3,5 +3,16 @@
     {"id": "j_01", "speaker": "jordan", "expr": "smirk", "text": "Toi, pourquoi tu restes chez Apple ?"},
     {"id": "c_01", "speaker": "client", "expr": "happy", "text": "J'aime le design… et tout fonctionne bien ensemble."},
     {"id": "j_02", "speaker": "jordan", "expr": "skeptical", "text": "Attends. Donc tu rachètes parce que tu es déjà dedans ?"}
+  ],
+  "ep01": [
+    {"id": "h_01", "speaker": "jordan", "expr": "smirk", "text": "Pourquoi certains achètent un iPhone… puis une montre, des écouteurs et un Mac ? Apple vend des téléphones… ou une collection ?"},
+    {"id": "j_01", "speaker": "jordan", "expr": "smirk", "text": "Toi, pourquoi tu restes chez Apple ?", "gapBefore": 0.35},
+    {"id": "c_01", "speaker": "client", "expr": "happy", "text": "J'aime le design… et tout fonctionne bien ensemble."},
+    {"id": "j_02", "speaker": "jordan", "expr": "skeptical", "text": "Attends. Donc tu rachètes parce que tu es déjà dedans ?"},
+    {"id": "e_01", "speaker": "jordan", "expr": "neutral", "text": "Voilà le premier mécanisme : l'écosystème. Tes photos, tes messages, tes appareils… tout se connecte. C'est pratique. Et changer de marque peut demander plus d'efforts.", "gapBefore": 0.5},
+    {"id": "p_01", "speaker": "jordan", "expr": "smirk", "text": "Deuxième mécanisme : l'identité. Pour certains, Apple n'est pas juste un outil. C'est une marque à laquelle ils s'identifient.", "gapBefore": 0.5},
+    {"id": "r_01", "speaker": "jordan", "expr": "smirk", "text": "Le vrai coup de génie, c'est d'associer le produit à une expérience complète.", "gapBefore": 0.5},
+    {"id": "c_02", "speaker": "client", "expr": "happy", "text": "Bon… je vais acheter un iPad.", "gapBefore": 0.3},
+    {"id": "j_03", "speaker": "jordan", "expr": "smirk", "text": "Évidemment.", "gapBefore": 0.9}
   ]
 }
