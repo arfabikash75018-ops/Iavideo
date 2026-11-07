@@ -1,0 +1,7 @@
+{
+  "test01": [
+    {"id": "j_01", "speaker": "jordan", "expr": "smirk", "text": "Toi, pourquoi tu restes chez Apple ?"},
+    {"id": "c_01", "speaker": "client", "expr": "happy", "text": "J'aime le design… et tout fonctionne bien ensemble."},
+    {"id": "j_02", "speaker": "jordan", "expr": "skeptical", "text": "Attends. Donc tu rachètes parce que tu es déjà dedans ?"}
+  ]
+}

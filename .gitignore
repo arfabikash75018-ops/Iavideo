@@ -5,3 +5,5 @@ video/out/test.*
 video/out/bench.mp4
 video/out/planche*.png
 video/out/chk/
+the-selling-game/node_modules/
+the-selling-game/out/*.png
